@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:900i');
+
+body {
+    display: none;
+    margin: 0%;
+    /* background-image: url("https://cdn.discordapp.com/attachments/815111255694114826/839944603091599400/unknown.png");
+    background-repeat: no-repeat;
+    background-size: 100%; */
+    font-family: 'Heebo', sans-serif;
+    color: white;
+    user-select: none;
+    font-weight: 600;
+}
+
+.shadow {
+    position: fixed;
+    box-shadow:100px 100px 800px 200px rgba(0, 0, 0, 0.8) inset; 
+    width: 100%;
+    height: 100%;
+}
+
+.location {
+    z-index: 999;
+    position: absolute;
+    left: 5%;
+    bottom: 10%;
+}
+
+.location .name {
+    font-size: 3.5vh;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: -2px 2px 0px #00e6e6,
+                 -4px 4px 0px #01cccc,
+                 -6px 6px 0px #00bdbd;
+}
+
+.location .hr {
+    margin: 1vh 0vh 1vh 0vh;
+    filter: blur(0.1vh);
+    -webkit-filter: blur(0.1vh);
+    background-color: RGBA(0,0,0, 0.3);
+    width: 50vh;
+    padding: 0.3vh 0.2vh 0.3vh 0.2vh;
+    border-radius: 1vh;
+}
+
+.location .spawn {
+    font-size: 1.40vh;
+    text-align: right;
+    float: right;
+    padding: 3vh 10vh 3vh 10vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(50, 50, 50, 0.35);
+    color: rgb(255, 255, 255);
+    transition: color 200ms; 
+    box-shadow: inset 0px 15px 10px -15px #86E9FF, inset 15px 0px 10px -15px  #86E9FF; 
+    transform: skewX(-15deg);
+    transition: ease-in 0.8s;
+}
+
+.location .spawn:hover {
+    box-shadow: inset 0 30vh 0 0 #86E9FF;
+    color: black;
+}
+
+.location .lastloc {
+    font-size: 1.40vh;
+    text-align: right;
+    float: right;
+    padding: 3vh 7vh 3vh 7vh;
+    background-color: rgba(50, 50, 50, 0.35);
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+    transition: color 200ms;
+    box-shadow: inset 0px -15px 10px -15px #86E9FF, inset -15px 0px 10px -15px #86E9FF;    
+    transform: skewX(-15deg);
+    transition: ease-in 0.8s;
+}
+
+.location .lastloc:hover {
+    box-shadow: inset 0 -30vh 0 0 #86E9FF;
+    color: black;
+}
+
+.buttons {
+    z-index: 999;
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+    display: flex;
+}
+
+.buttons .button {
+    font-size: 1.40vh;
+    text-align: right;
+    float: right;
+    padding: 3vh 7vh 3vh 7vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(50, 50, 50, 0.35);
+    color: rgb(255, 255, 255);
+    transition: color 200ms;
+    box-shadow: inset 0px 15px 10px -15px #86E9FF, inset 15px 0px 10px -15px  #86E9FF; 
+    transform: skewX(-15deg);
+    transition: ease-in 0.8s;
+}
+
+.buttons .button1 {
+    font-size: 1.40vh;
+    text-align: right;
+    float: right;
+    padding: 3vh 7vh 3vh 7vh;
+    background-color: rgba(50, 50, 50, 0.35);
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+    transition: color 200ms;
+    box-shadow: inset 0px -15px 10px -15px #86E9FF, inset -15px 0px 10px -15px #86E9FF;    
+    transform: skewX(-15deg);
+    transition: ease-in 0.8s;
+}
+
+.buttons .button i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.buttons .button:hover {
+    box-shadow: inset 0 30vh 0 0 #86E9FF;
+    color: black;
+}
+
+.buttons .button1 i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.buttons .button1:hover {
+    box-shadow: inset 0 -30vh 0 0 #86E9FF;
+    color: black;
